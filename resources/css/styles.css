@@ -2,6 +2,8 @@ html, body {
   font-size: 18px;
   color: white;
   font-family: Helvetica;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -65,7 +67,7 @@ html, body {
 }
 
 
-/*------------ Nav ------------*/
+/*------------ Navigation ------------*/
 
 nav {
   background-color: firebrick;
@@ -91,10 +93,82 @@ nav span {
   justify-content: space-between;
 }
 
-/*------------ Main Content ------------*/
+/*------------ Featured Items ------------*/
 
+.featured {
+  margin: 0 auto;
+  width: 960px;
+  position: relative;
+  top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.featured-item {
+  border: 4px solid black;
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.featured-item img {
+  height: 9rem;
+  margin: 2rem auto;
+  max-width: 8em;
+  overflow: hidden;
+}
+
+
+.featured-item-text {
+  padding: 0.66rem 0;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+/*------------ Store Info ------------*/
+
+.store-info {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  margin: 6rem 0 0;
+  width: 960px;
+}
+
+.info-item {
+  width: 35%;
+}
+
+.info-1 {
+  background-color: black;
+  margin-bottom: 3px;
+  padding: 1rem 0;
+  text-indent: 2rem;
+  width: 100%;
+}
+
+.info-2 {
+  background-color: white;
+  color: black;
+}
 
 
 /*------------ Footer ------------*/
+
+footer {
+  height: 15rem;
+  width: auto;
+  background-color: black;
+  margin-top: 4rem;
+  bottom: 0;
+}
+
+footer span {
+  text-align: left;
+  padding: 6.5rem 0;
+  display: flex;
+}
 
 /*------------ Media Queries ------------*/
