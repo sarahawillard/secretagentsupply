@@ -110,6 +110,9 @@ nav span {
 .featured-item {
   border: 4px solid black;
   width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .featured-item img {
@@ -127,6 +130,8 @@ nav span {
   display: block;
 }
 
+#glasses img{
+}
 /*------------ Store Info ------------*/
 
 .store-info {
@@ -174,11 +179,23 @@ footer span {
 /*------------ Media Queries ------------*/
 
 @media only screen and (max-width: 1024px) {
-  .container {
-    max-width: 100%
-  }
   .featured-item {
     width: 47%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .featured {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .store-info {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+  }
+  .container {
+    max-width: 100%
   }
   .large-screen-nav {
     display: none;
@@ -192,8 +209,54 @@ footer span {
 }
 
 @media only screen and (max-width: 470px) {
-
+  .banner {
+    height: 15rem;
+  }
+  .headline {
+    padding: 1rem 2rem;
+    top: 7rem;
+    width: auto;
+    height: 5rem;
+  }
+  .headline h4 {
+    font-size: 0.77rem;
+  }
+  .headline h1 {
+    font-size: 1rem;
+  }
   .info-item {
     width: 90%;
+  }
+  .featured-item {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .featured {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .store-info {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: center;
+  }
+  .info-2 {
+    margin-bottom: 0.5rem;
+  }
+  .info-item {
+    width: 90%;
+  }
+  #watch {
+    display: none;
+  }
+  footer span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
